@@ -1,0 +1,104 @@
+.posts-box {
+    
+    background-color: #FDFDFD;
+
+    &-grid {
+        display: grid;
+        grid-gap: 1em;
+
+        padding: 1em;
+
+        a {
+            &:hover{
+
+                .post-item-content {
+
+                    padding: 1em 1.5em; 
+
+                }
+            }
+        }
+
+        .post-item{
+            @include flexbox(column,nowrap,center,center);
+
+            @media (min-width:768px) {
+                @include flexbox(row,nowrap,space-between,stretch);
+
+            }
+
+            border-radius: 5px;
+
+            transition: all .2s ease-in-out;
+
+            &:hover {
+
+                background-color: darken(white,10);
+
+            }
+
+            &-content {
+                @include flexbox(column,nowrap,space-between,stretch);
+
+                transition: all .2s ease-in-out;
+                
+                padding: 0.5em 1em;
+
+            }
+
+            img {
+                width: 100%;
+
+                
+                @media (min-width:768px) {
+                    
+                    width: 200px;
+                    
+                }
+
+                height: 220px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            h2 {
+                font-size: 1.3em;
+                line-height: 1.4em;
+                font-weight: bold;
+                font-family: 'Century Gothic';
+                color: #0B0B0B;
+            }
+
+            .desc{
+                margin: 10px 0;
+
+                font-size: 1em;
+                line-height: 1.6em;
+                font-family: 'Helvetica';
+                color: rgba(black,0.6);
+            }
+
+            .postfoot {
+                @include flexbox(row,nowrap,space-between,center);
+
+                font-family: 'Helvetica';
+                font-size: 0.9em;
+                color: rgba(black,0.4);
+
+                .category {
+                    background-color: #FF7E4E;
+                    color: white;
+                    font-family: 'Century Gothic';
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    display: inline-block;
+
+                    padding: 0.2em 0.4em;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+}
+    

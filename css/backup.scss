@@ -1,0 +1,63 @@
+//News.scss Second New
+
+.second-new {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    grid-gap: 10px;
+
+    color: #0B0B0B;
+
+    &:hover{
+        background-color: darken(white,5);
+    }
+
+    .item-image{
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        div {
+            @include flexbox(column,nowrap,flex-end,baseline);
+
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            padding: 0.5em;
+
+            background: linear-gradient(transparent,black);
+
+            span {
+                font-family: 'Helvetica';
+                font-size: 0.7em;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: white;
+                padding: 0.2em 0.4em;
+
+                background-color: #FF7E4E;
+            }
+        }
+    }
+
+    .item-content {
+        @include flexbox(column,nowrap,flex-start,baseline);
+        padding: 0.5em 0.5em 0.5em 0;
+        
+        h4 {
+            font-family: 'Poppins';
+
+        }
+        p {
+            font-family: 'Helvetica';
+            font-size: 0.8em;
+            opacity: 0.7;
+            margin-top: 0.5em;
+        }
+    }
+}
