@@ -642,8 +642,7 @@ header {
           filter: grayscale(0); }
 
 @media (min-width: 0px) {
-  body {
-    background-color: purple; }
+
 
   .header-box-logo {
     display: flex;
@@ -666,11 +665,9 @@ header {
     .news-box-content p {
       display: none; } }
 @media (min-width: 320px) {
-  body {
-    background-color: green; } }
+ }
 @media (min-width: 768px) {
-  body {
-    background-color: yellow; }
+
 
   .header-box-logo {
     width: auto; }
@@ -681,8 +678,7 @@ header {
   .news-box-content p {
     display: inherit; } }
 @media (min-width: 1024px) {
-  body {
-    background-color: red; }
+
 
   .news-box-content {
     height: 510px;
