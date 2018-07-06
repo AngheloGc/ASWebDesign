@@ -1,0 +1,46 @@
+.sidebar-box
+    .sticky-div
+        .sidebar-box-ads
+            img(src="img/anime-ad.gif", alt="Publicidad")
+        .sidebar-box-social
+            h3 Redes Sociales
+            .social-item
+                a(href="/")
+                    img(src="img/facebook.png", alt="Social")
+                a(href="/")
+                    img(src="img/twitter.png", alt="Social")
+                a(href="/")
+                    img(src="img/instagram.png", alt="Social")
+        .sidebar-box-banners
+            h3 Nuestros Proyectos
+            .banners-item
+                a(href="/")
+                    img(src="img/banner1.jpg", alt="")
+                    .banner-content
+                        span Concurso de Novelas Ligeras
+                a(href="/")
+                    img(src="img/banner2.jpg", alt="")
+                    .banner-content
+                        span Revista Anime Sama
+                a(href="/")
+                    img(src="img/banner3.jpg", alt="")
+                    .banner-content
+                        span Anime Sama Radio
+        .team-box
+            h3 Nuestro Equipo
+            .sidebar-box-team
+                - for (var i = 0; i < 4; ++i) {
+                    a(href="/")
+                        img(src="img/shingeki.jpg", alt="Social")
+                        span El Onii-Sama
+                    a(href="/")
+                        img(src="img/tokyoghoul.jpg", alt="Social")
+                        span Niijima
+                    a(href="/")
+                        img(src="img/realgirl.jpg", alt="Social")
+                        span Judith
+                    a(href="/")
+                        img(src="img/realgirl.jpg", alt="Social")
+                        span Cyan~
+                - }
+    

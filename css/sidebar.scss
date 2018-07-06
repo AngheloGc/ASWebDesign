@@ -1,5 +1,4 @@
 .sidebar-box {
-    margin-bottom: 0.5em;
     
     .sticky-div {
         position: sticky;
@@ -7,8 +6,7 @@
     }
 
     h3 {
-        margin-top: 1em;
-        color: rgba(black,.5);
+        color: rgba(black,.7);
         font-family: 'Century Gothic';
         font-style: italic;
         text-transform: uppercase;
@@ -20,7 +18,7 @@
     }
 
     &-ads{
-        background-color: #fff;
+        background-color: #FDFDFD;
         padding: 1em;
         
 
@@ -31,14 +29,20 @@
     }
     
     &-social {
-        @include flexbox(row,nowrap,space-around,center);
-
-        background-color: #fff;
-
+        
+        background-color: #FDFDFD;
+        padding: 1em;
         margin-top: 1em;
+        
+        
+        .social-item {
+            @include flexbox(row,nowrap,space-around,center);
+            
+            border-top: 1px solid rgba(lighten(#FF7E4E,10),.5);
+            padding-top: 1em;
+        }
 
         a {
-            padding: 1em;
 
             filter: grayscale(100%);
             transition: all .2s ease-in-out;
@@ -49,8 +53,8 @@
         }
 
         img {
-            width: 5em;
-            height: 5em;
+            width: 4.5em;
+            height: 4.5em;
         }
 
         span {
@@ -65,7 +69,12 @@
     &-banners{
         margin-top: 1em;
         padding: 1em;
-        background-color: #fff;
+        background-color: #FDFDFD;;
+
+        .banners-item {
+            padding-top: 1em;
+            border-top: 1px solid rgba(lighten(#FF7E4E,10),.5);
+        }
         
 
         a {
@@ -111,15 +120,23 @@
         }
     }
 
+    .team-box {
+        background-color: #FDFDFD;
+        margin-top: 1em;
+        padding: 1em;
+    }
+
     &-team {
         border-top: 1px solid rgba(lighten(#FF7E4E,10),.5);
 
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        grid-gap: 10px;
+        padding-top: 1em;
+
 
         a {
             @include flexbox(column,nowrap,baseline,center);
-            padding: 1em;
 
             filter: grayscale(100%);
             transition: all .2s ease-in-out;
@@ -138,7 +155,7 @@
         }
 
         span {
-            padding: 0.5em;
+            padding-top: 0.5em;
             text-align: center;
             display: block;
             font-family: 'Helvetica';

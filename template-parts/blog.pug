@@ -1,0 +1,24 @@
+.blog-box
+    .blog-box-header.header-section
+        h3 Blog
+        a(href="/")
+            span Ver todo
+    .blog-box-grid
+        a(href="/").blog-item-main
+                .blog-item
+                    img(src="img/sao.jpg", alt="").blog-item-image
+                    div.post-item-content
+                        .author
+                            span Por Giancarlo Sesarego
+                            img(src="img/realgirl.jpg", alt="")
+                        h3 ¿Es S.A.O. realmente una mala historia?
+        - for (var i = 0; i < 4; ++i) {
+            a(href="/").blog-item-second
+                .blog-item
+                    img(src="img/shingeki.jpg", alt="").blog-item-image
+                    div.post-item-content
+                        .author
+                            span Por Author
+                            img(src="img/realgirl.jpg", alt="")
+                        h3 Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!
+        - }

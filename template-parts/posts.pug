@@ -1,0 +1,18 @@
+.posts-box
+    .posts-box-header.header-section
+        h3 Noticias
+        a(href="/")
+            span Ver todo
+    .posts-box-grid
+        - for (var i = 0; i < 10; ++i) {
+            a(href="/")
+                .post-item
+                    img(src="img/shingeki.jpg", alt="")
+                    div.post-item-content
+                        h2 Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!
+                        p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, qui. Repellendus doloribus a libero earum non nisi perspiciatis, voluptatibus obcaecati ratione odio quibusdam expedita dignissimos sit ducimus architecto deleniti? Cupiditate?
+                        div.postfoot
+                            span.category Categoría 
+                            span Mar. 12 de Julio 2018
+        - }
+        
