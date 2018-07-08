@@ -1,0 +1,126 @@
+.menu-mobile {
+
+    height: 0px;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    
+
+    @media (min-width:1024px) {
+        display: none!important;
+    }
+
+    background-color: lighten(black,20);
+
+    &-box {
+        background-color: lighten(black,20);
+
+        font-family: 'Century Gothic';
+
+        padding: 1em;
+
+        display: grid;
+        grid-gap: 2em;
+
+
+        .mobile-login {
+            @include flexbox(row, nowrap,flex-start,center);
+
+            .fa-address-card {
+                position: relative;
+                top: 1px;
+            }
+
+            span {
+                margin-right: 0.5em;                
+                color: #FF7E4E;
+                font-size: 1.5em;
+            }
+
+            p {
+                margin: 0 0.5em;
+                color: gray;
+            }
+                
+
+            a {
+                display: block;
+                color: white;
+                font-size: 1.5em;
+                border-bottom: 1px solid #FF7E4E;
+            }
+
+
+        }
+
+        .mobile-search {
+
+            .search-box {
+                @include flexbox(row,nowrap,space-between,center);
+                    
+                border-radius: 4em;
+                border: 1px solid gray;
+                padding: 0.4em 1em;
+                margin-right: 1.3em;
+                color: gray;
+                width: 100%;
+
+                &:focus {
+                    border: 1px solid #FF7E4E;
+                    color: #FF7E4E;
+                }
+            }
+
+            input {
+                border: 0;
+                font-family: 'Century Gothic';
+                color: white;
+                background-color: transparent;
+                font-size: 1.2em;
+
+                &:focus {
+
+                    & ~ button {
+
+                        color: #FF7E4E;
+
+                    }
+                }
+                
+            }
+
+            button {
+                color: gray;
+                background-color: transparent;
+                border:0;
+                cursor: pointer;
+                transition: color .2s ease-in-out;
+            }
+        }
+
+        .mobile-menu {
+
+            span {
+                opacity: 0.7;
+                font-size: 0.9em;
+                color: #FF7E4E;
+            }
+
+            ul {
+                a {
+                    color: white;
+                    font-size: 1.35em;
+                    
+                    li {
+                        padding: 0.8em 0.8em;
+                        border-bottom: 1px solid rgba(gray,0.1);
+                        transition: background-color .2s ease-in-out;
+
+                        &:hover {
+                            background-color: #FF7E4E;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

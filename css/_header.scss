@@ -26,7 +26,6 @@ header {
         }
 
         &-nav {
-            display: none;
 
             @media (min-width:768px) {
                 @include flexbox(row,wrap,flex-end,center);
@@ -34,6 +33,12 @@ header {
             }
 
             &-menu {
+
+                @media (max-width:1023px) {
+                    
+                    display: none;
+
+                }
 
                 ul {
                     @include flexbox(row,wrap,flex-start,center);
@@ -57,7 +62,64 @@ header {
 
             }
 
+            &-search {
+
+                @media (max-width:1023px) {
+                    
+                    display: none;
+
+                }
+
+                .search-box {
+                    
+                    border-radius: 4em;
+                    border: 1px solid gray;
+                    padding: 0.4em 0.8em;
+                    margin-right: 1.3em;
+                    color: gray;
+
+                    &:focus {
+                        border: 1px solid #FF7E4E;
+                        color: #FF7E4E;
+                    }
+                }
+
+                input {
+                    border: 0;
+                    font-family: 'Century Gothic';
+                    color: white;
+                    background-color: transparent;
+                    width: 100px;
+                    transition: width .2s ease-in-out;
+
+                    &:focus {
+                        width: 150px;
+
+                        & ~ button {
+
+                            color: #FF7E4E;
+
+                        }
+                    }
+                    
+                }
+
+                button {
+                    color: gray;
+                    background-color: transparent;
+                    border:0;
+                    cursor: pointer;
+                    transition: color .2s ease-in-out;
+                }
+            }
+
             &-login {
+
+                @media (max-width:1023px) {
+                    
+                    display: none;
+
+                }
 
                 a{
 
@@ -78,6 +140,31 @@ header {
                         
                     }
                 }
+            }
+
+            &-menubutton {
+
+                .fa-bars {
+                    position: relative;
+                }
+
+                button {
+                    display: block;
+                    color: #FF7E4E;
+                    border: 0;
+                    cursor: pointer;
+                    background-color: transparent;
+                    font-size: 2em;
+                    padding: 0.2em;
+                    border-radius: 0.1em;
+                    border: 1px solid #FF7E4E;
+                }
+
+                @media (min-width:1024px) {
+                    
+                    display: none;
+
+                }   
             }
         }
     }

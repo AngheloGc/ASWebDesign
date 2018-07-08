@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Anime Sama | Tenemos cultura</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"/>
   </head>
   <body>
     <header>
@@ -19,10 +20,42 @@
                 <li>Rankings</li></a><a href="">
                 <li>Blog</li></a></ul>
           </div>
+          <div class="header-box-nav-search">
+            <div class="search-box">
+              <input type="text" placeholder="Buscar"/>
+              <button class="fas fa-search" type="submit"></button>
+            </div>
+          </div>
           <div class="header-box-nav-login"><a href="/"><img src="img/login-icon.png" alt="Log in"/></a></div>
+          <div class="header-box-nav-menubutton">
+            <button class="fas fa-bars" id="mobile-menu-button"></button>
+          </div>
         </div>
       </div>
     </header>
+    <div class="menu-mobile" id="mobile-menu-box">
+      <div class="menu-mobile-box">
+        <div class="mobile-login"><span class="far fa-address-card"></span><a href="/">Inicia Sesión</a>
+          <p>o</p><a href="/">Regístrate </a>
+        </div>
+        <div class="mobile-search">
+          <div class="search-box">
+            <input type="text" placeholder="Buscar"/>
+            <button class="fas fa-search" type="submit"></button>
+          </div>
+        </div>
+        <div class="mobile-menu"><span>Menu</span>
+          <ul><a href="/">
+              <li>Noticias</li></a><a href="/">
+              <li>Reseñas</li></a><a href="/">
+              <li>Rankings</li></a><a href="/">
+              <li>Blog</li></a><a href="/">
+              <li>Proyectos</li></a><a href="/">
+              <li>Equipo</li></a><a href="/">
+              <li>Contacto</li></a></ul>
+        </div>
+      </div>
+    </div>
     <main>
       <div class="news-box">
         <div class="news-box-content"><a class="news-box-content-item main-new" href="/"><img src="img/tokyoghoul.jpg" alt="Tokyo Ghoul"/>
@@ -221,28 +254,28 @@
                   <h3>¿Es S.A.O. realmente una mala historia?</h3>
                 </div>
               </div></a><a class="blog-item-second" href="/">
-              <div class="blog-item"><img class="blog-item-image" src="img/jojos.jpg" alt=""/>
+              <div class="blog-item"><img class="blog-item-image" src="img/shingeki.jpg" alt=""/>
                 <div class="post-item-content">
-                  <div class="author"><span>Por Tusk</span><img src="img/jojos.jpg" alt=""/></div>
-                  <h3>Cómo el autor de Jojos definió un estilo</h3>
+                  <div class="author"><span>Por Author</span><img src="img/realgirl.jpg" alt=""/></div>
+                  <h3>Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!</h3>
                 </div>
               </div></a><a class="blog-item-second" href="/">
-              <div class="blog-item"><img class="blog-item-image" src="img/darling.jpg" alt=""/>
+              <div class="blog-item"><img class="blog-item-image" src="img/shingeki.jpg" alt=""/>
                 <div class="post-item-content">
-                  <div class="author"><span>Por Imouto-chan</span><img src="img/darling.jpg" alt=""/></div>
-                  <h3>Más allá de un capítulo especial</h3>
+                  <div class="author"><span>Por Author</span><img src="img/realgirl.jpg" alt=""/></div>
+                  <h3>Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!</h3>
                 </div>
               </div></a><a class="blog-item-second" href="/">
-              <div class="blog-item"><img class="blog-item-image" src="img/fullmetal.jpg" alt=""/>
+              <div class="blog-item"><img class="blog-item-image" src="img/shingeki.jpg" alt=""/>
                 <div class="post-item-content">
-                  <div class="author"><span>Por Niijima</span><img src="img/realgirl.jpg" alt=""/></div>
-                  <h3>La importancia de la animación en una serie</h3>
+                  <div class="author"><span>Por Author</span><img src="img/realgirl.jpg" alt=""/></div>
+                  <h3>Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!</h3>
                 </div>
               </div></a><a class="blog-item-second" href="/">
-              <div class="blog-item"><img class="blog-item-image" src="img/evangelion.jpg" alt=""/>
+              <div class="blog-item"><img class="blog-item-image" src="img/shingeki.jpg" alt=""/>
                 <div class="post-item-content">
-                  <div class="author"><span>Por Jair</span><img src="img/realgirl.jpg" alt=""/></div>
-                  <h3>Te explicamos cómo conectan los finales de Evangelion</h3>
+                  <div class="author"><span>Por Author</span><img src="img/realgirl.jpg" alt=""/></div>
+                  <h3>Titulo de la noticia Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, saepe!</h3>
                 </div>
               </div></a>
           </div>
@@ -265,4 +298,5 @@
       </div>
     </div>
   </body>
+  <script src="js/mobile-menu.js"></script>
 </html>
